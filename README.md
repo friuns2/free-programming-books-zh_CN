@@ -764,8 +764,8 @@
 * [TextGrocery 中文 API](http://textgrocery.readthedocs.org/zh/latest/) ( 基于svm算法的一个短文本分类 Python 库 )
 * [Requests: HTTP for Humans](http://requests-docs-cn.readthedocs.org/zh_CN/latest/)
 * [Pillow 中文文档](http://pillow-cn.readthedocs.org/en/latest/#)
-* [PyMOTW 中文版](http://pymotwcn.readthedocs.org/en/latest/)
-* [Python 官方文档中文版](http://data.digitser.net/zh-CN/python_)
+* [PyMOTW 中文版](http://pymotwcn.readthedocs.org/en/latest/index.html)
+* [Python 官方文档中文版](http://data.digitser.net/zh-CN/python_index.html):worried:
 * [Fabric 中文文档](http://fabric-chs.readthedocs.org)
 * [Beautiful Soup 4.2.0 中文文档](http://beautifulsoup.readthedocs.org/zh_CN/latest/)
 * [Python 中的 Socket 编程](https://legacy.gitbook.com/book/keelii/socket-programming-in-python-cn/details) :worried:
