@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>free-programming-books-zh_CN</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121822;
+      --panel-2: #0f141c;
+      --text: #e6edf3;
+      --muted: #9fb0c0;
+      --accent: #ff6b35;
+      --accent-2: #ffd166;
+      --line: #1e2633;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Space Grotesk", "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at top, #111827 0%, #0b0f14 60%);
+      color: var(--text);
+    }
+    header {
+      padding: 64px 24px 32px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      margin: 6px;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .hero-title {
+      font-size: clamp(32px, 6vw, 64px);
+      margin: 12px 0 8px;
+    }
+    .hero-sub {
+      font-size: clamp(16px, 2vw, 20px);
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto 24px;
+    }
+    .cta {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 1px solid var(--accent);
+      color: var(--text);
+      text-decoration: none;
+      background: linear-gradient(135deg, rgba(255,107,53,0.2), rgba(255,209,102,0.1));
+    }
+    .layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 24px;
+    }
+    nav {
+      position: sticky;
+      top: 20px;
+      align-self: start;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    nav h3 { margin: 0 0 10px; font-size: 14px; color: var(--accent-2); }
+    nav a {
+      display: block;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    nav a:last-child { border-bottom: none; }
+    section {
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--accent-2);
+    }
+    code, pre {
+      background: #0b111a;
+      border: 1px solid #1b2431;
+      border-radius: 10px;
+      padding: 12px;
+      color: #c9d1d9;
+    }
+    pre { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+    }
+    th { background: #151c26; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 36px 12px 60px;
+    }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      nav { position: relative; }
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <div>
+      <span class="badge">Community Fork</span>
+      <span class="badge">PR Sweeper</span>
+      <span class="badge">Markdown First</span>
+    </div>
+    <h1 class="hero-title">free-programming-books-zh_CN</h1>
+    <p class="hero-sub">A bold, community-driven vault of free Chinese programming books. Fast to read. Easy to contribute. Built to survive link rot and keep learning alive.</p>
+    <div>
+      <a class="cta" href="https://github.com/friuns2/free-programming-books-zh_CN">Open Repository</a>
+      <a class="cta" href="https://github.com/friuns2/free-programming-books-zh_CN/issues">Report a Link</a>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav>
+      <h3>Table of Contents</h3>
+      <a href="#overview">Overview</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#quick-start">Quick Start</a>
+      <a href="#structure">Project Structure</a>
+      <a href="#maintenance">Maintenance Status</a>
+      <a href="#merged-prs">Merged PRs</a>
+      <a href="#risks">Risks</a>
+      <a href="#contributing">Contributing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>This fork focuses on maintaining and consolidating open pull requests while keeping the core list pristine and fast to consume. The primary artifact is <strong>README.md</strong>.</p>
+      </section>
+
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <ul>
+          <li>Large, curated list of free Chinese programming books.</li>
+          <li>Community-driven updates via pull requests.</li>
+          <li>Minimal tooling; Markdown is the source of truth.</li>
+        </ul>
+      </section>
+
+      <section id="quick-start">
+        <h2>Quick Start</h2>
+        <pre><code>git clone https://github.com/friuns2/free-programming-books-zh_CN.git
+cd free-programming-books-zh_CN
+open README.md</code></pre>
+      </section>
+
+      <section id="structure">
+        <h2>Project Structure</h2>
+        <pre><code>README.md
+README.cd
+bundle.yml
+what-non-programming-books-should-programmers-read.md
+LICENSE
+CONTRIBUTING.md</code></pre>
+      </section>
+
+      <section id="maintenance">
+        <h2>Maintenance Status</h2>
+        <p>Low upstream activity with a backlog of PRs. This fork acts as a sweeper and stabilization branch.</p>
+      </section>
+
+      <section id="merged-prs">
+        <h2>Merged PRs</h2>
+        <p>30 open PRs merged in this run, including new Go, Python, MySQL, Spring, and design-pattern resources plus link fixes.</p>
+      </section>
+
+      <section id="risks">
+        <h2>Risks</h2>
+        <table>
+          <thead>
+            <tr><th>Risk</th><th>Mitigation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Link rot</td><td>Periodic validation or link-check workflow.</td></tr>
+            <tr><td>Inconsistent submissions</td><td>Add formatting rules in CONTRIBUTING.md.</td></tr>
+            <tr><td>Stale sections</td><td>Quarterly review pass.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contributing">
+        <h2>Contributing</h2>
+        <p>Open an issue or PR with fixes, new resources, or corrections. See CONTRIBUTING.md for format guidance.</p>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        <p><strong>Is this official?</strong> This is a community maintenance fork focused on PR sweeps and curation.</p>
+        <p><strong>How do I add a book?</strong> Edit README.md and open a PR with a clean, concise entry.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Built by the community. Maintained with focus. Keep learning.
+  </footer>
+</body>
+</html>
